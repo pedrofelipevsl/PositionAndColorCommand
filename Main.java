@@ -7,7 +7,8 @@ class Main {
 
 		Scanner scanner = new Scanner(System.in);
 		int option;
-
+		Scanner scX = new Scanner(System.in);
+		Scanner scY = new Scanner(System.in);
 		do {
 			System.out.println("");
 			history.print();
@@ -23,11 +24,10 @@ class Main {
 			
 			switch (option) {
 			case 1:
-				Scanner scn = null;
 				System.out.print("Digite X: ");
-				int x = scn.nextInt();
+				int x = scX.nextInt();
 				System.out.print("Digite Y: ");
-				int y = scn.nextInt();
+				int y = scY.nextInt();
 				
 				history.add(new MoveCommand(rectangle, x, y));
 				break;
