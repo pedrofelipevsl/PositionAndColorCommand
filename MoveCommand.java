@@ -4,7 +4,7 @@ public class MoveCommand implements ICommand {
 		this.previousX = rectangle.getX();
 		this.previousY = rectangle.getY();
 		this.newX = newX;
-		this.newX = newY;
+		this.newY = newY;
 	}
 
 	@Override
